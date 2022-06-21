@@ -1,0 +1,637 @@
+/* colour 1 #F8F9FA background */ 
+/* colour 2 #DEE2E6 selected tab */ 
+/* colour 3 #E9ECEF tabs */ 
+/* colour 4 #343A40 text */ 
+
+:root {
+    --color1: #FFFFFF; /* background */ 
+    --color2: #F5F3F4; /* selected tab */ 
+    --color3: #FFFFFF; /* tabs */ 
+    --color4: #212529; /* text */ 
+    --border: #F5F3F4; /* borders */
+}
+
+textarea {
+    all: unset;
+}
+
+button {
+    all: unset;
+    cursor: pointer;
+}
+
+input {
+    all: unset;
+}
+
+html, body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    color: var(--color4); /* colour 4 text */ 
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main_container {
+    display: flex;
+    margin-top: 0px;
+    width: 100%;
+    height: 90%;
+    background-color: var(--color1); /* colour 1 */
+}
+
+/* ===================================== Header ===================================== */
+
+.head_foot {
+    height: 5%;
+    border-bottom: 1px solid var(--border);
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: var(--color1); /* colour 2 */ 
+}
+
+li {
+    float: left;
+    border-right: 1px solid var(--border);
+}
+
+li a {
+    display: block;
+    color: var(--color4); /* colour 4 text */ 
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+li a:hover {
+    background-color: var(--color2); /* colour 3 */ 
+}
+
+#float_right {
+    float:right;
+    border-right: 0px solid var(--border);
+    margin-right: 1%;
+}
+
+/* ===================================== FOOTER ===================================== */
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5%;
+    width: 100%;
+    background-color: var(--color1); /* colour 2 */ 
+    color: var(--color4); /* colour for Text */ 
+    text-align: center;
+    border-top: 1px solid var(--border);
+}
+
+/* ==================================== SIDE BAR ==================================== */
+
+.tab {
+    font-size: medium;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 99%;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 2%;
+    height: 80px;
+    background-color: var(--color3); 
+    border-bottom: 2px solid var(--border);
+}
+
+.new_friend_tab {
+    font-size: medium;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 99%;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 2%;
+    height: 80px;
+    background-color: var(--color3); 
+    border-bottom: 2px solid var(--border);
+}
+
+.tab:hover {
+    background-color: var(--color2);
+}
+
+#blog_headers {
+    border-top: 2px solid var(--border);
+}
+
+.friends_list {
+    text-align: center;
+    font-size: larger;
+    display: inline-flex;
+    flex-direction: column;
+    width: 25%;
+    height: 100%;
+    overflow: scroll;
+    background-color: var(--color1); /* colour 1 */
+    border-right: 1px solid var(--border);
+    border-bottom: 1px solid #212529;
+}
+
+.friends_list::-webkit-scrollbar {
+    display: none;
+}
+
+.current {
+    background-color: var(--color2); /* colour 2 */ 
+}
+
+#add_friend {
+    margin-top: 5%;
+    width: 80%;
+    display: flex;
+}
+
+#add_friend_username {
+    width: 80%;
+}
+#mini_button {
+    border-radius: 5px;
+    width: 20%;
+}
+#mini_button:hover {
+    background-color: var(--color2);
+}
+
+/* ==================================== MESSAGES ==================================== */
+
+.message_box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color1); /* colour 1 */
+}
+
+.previous_messages {
+    width: 100%;
+    height: 100%;
+    background-color: var(--color1); /* colour 1 */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.write_message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 10%;
+    background-color: var(--color1); /* colour 1 */
+}
+
+.form {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.message {
+    width: 99%;
+    background-color: var(--color1); /* colour 1 */
+    margin: 5px;
+    padding: 2px;
+    border-radius: 40px;
+}
+
+.message_right {
+    text-align: end;
+    width: 99%;
+    background-color: var(--color1); /* colour 1 */
+    margin: 5px;
+    padding: 2px;
+    border-radius: 40px;
+}
+
+#input {
+    width: 90%;
+}
+
+#send_message {
+    width: 10%;
+}
+#err {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+/* ===================================== BLOG ===================================== */
+
+.blog_tab {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    border-radius: 30px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    height: 80px;
+    background-color: var(--color1); /* colour 1 */
+}
+
+#main_section {
+    display: flex;
+    width: 75%;
+}
+
+.title_container {
+    width: 100%;
+    height: 10%;
+    align-items: center;
+    justify-content: center;
+}
+
+.content_title {
+    width: 90%;
+    height: 100%;
+    text-align: center;
+    font-size: xx-large;
+    border-bottom: 1px solid var(--border);
+    margin: auto;
+}
+
+.body_container {
+    display: flex;
+    width: 100%;
+    height: 90%;
+}
+
+.content_body {
+    width: 90%;
+    height: 95%;
+    margin: auto;
+}
+
+.content_main {
+    width: 100%;
+    display: inline-flex;
+    flex-direction: column;
+}
+
+/* ===================================== FORUM ===================================== */
+
+#add_reply {
+    color: var(--color4); /* colour 4 text */ 
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 5%;
+}
+
+.reply_container {
+    border-radius: 15px;
+    background-color: var(--color2); /* Colour 2*/
+    height: 80%;
+    width: 98%;
+    display: flex;
+    margin: auto;
+}
+
+.add_reply_content {
+    width: 100%;
+}
+
+#reply {
+    width: 98%;
+    height: 100%;
+    color: var(--color4); /* colour 4 text */ 
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+#reply_button {
+    width: 100%;
+    height: 100%;
+    color: var(--color4); /* colour 4 text */ 
+    text-align: center;
+    border-radius: 15px;
+}
+
+#reply_button:hover {
+    background-color: var(--color2); /* Colour 2*/
+}
+
+#post_reply {
+    width: 10%;
+}
+
+#content_title {
+    text-align: center;
+    align-content: center;
+    font-size: xx-large;
+    border-bottom: 1px solid var(--border);
+    width: 90%;
+    height: 100%;
+    margin: auto;
+}
+
+.desc_container {
+    width: 100%;
+    height: 15%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+#content_body {
+    text-align: center;
+    align-content: center;
+    font-size: large;
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    border-bottom: 1px solid var(--border);
+}
+
+#add_replies_here {
+    height: 95%;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 0;
+    background-color: var(--color1);  /* colour 1 */
+    overflow: scroll;
+}
+
+.replies_container {
+    height: 70%;
+    width: 100%;
+    display: flex;
+}
+
+.reply {
+    color: var(--color4); /* colour 4 text */ 
+    margin: 1%;
+    padding: 1%;
+    background-color: var(--color3); /* colour 3 */ 
+    height: auto;
+    border-radius: 10px;
+}
+
+#add_replies_here::-webkit-scrollbar {
+    display: none;
+}
+
+/* ===================================== LOGIN ===================================== */
+
+.login_box {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.login_main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login_title {
+    font-size: xx-large;
+}
+
+#input_text {
+    background-color: var(--color2); /* colour 2 */
+    border-radius: 10px;
+    margin-top: 2%;
+}
+
+#input_title {
+    margin-top: 10%;
+}
+
+#username {
+    margin: 3%;
+}
+
+#password {
+    margin: 3%;
+}
+
+#password_retype {
+    margin: 3%;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#buttons {
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+#login_post {
+    width: 50%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: var(--color2); /* colour 2 */
+    padding: 5%;
+    margin: 5%;
+    text-align: center;
+}
+
+#login_post:hover {
+    background-color: var(--color3); /* colour 3 */
+}
+
+#login_button {
+    width: 50%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: var(--color2); /* colour 2 */
+    padding: 5%;
+    margin: 5%;
+    text-align: center;
+}
+
+#login_button:hover {
+    background-color: var(--color3); /* colour 3 */
+}
+
+#register_post {
+    width: 50%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: var(--color2); /* colour 2 */
+    padding: 5%;
+    margin: 5%;
+    text-align: center;
+}
+
+#register_post:hover {
+    background-color: var(--color3); /* colour 3 */
+}
+
+.inputs_forum {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+}
+
+#input_title_forum {
+    font-size: xx-large;
+    margin-top: 10%;
+}
+
+#input_text_forum {
+    display: flex;
+    width: 50%;
+    height: 15%;
+    margin-top: 2%;
+    background-color: var(--color2);
+    align-items: center;
+    border-radius: 10px;
+}
+
+#input_text_forum_description {
+    display: flex;
+    width: 50%;
+    height: 70%;
+    margin-top: 2%;
+    background-color: var(--color2);
+    align-items: center;
+    border-radius: 10px;
+}
+
+.inputs_forum input {
+    width: 90%;
+    height: 90%;
+    margin: auto;
+    font-size: x-large;
+}
+
+.inputs_forum textarea {
+    width: 95%;
+    height: 95%;
+    margin: auto;
+}
+
+#buttons_forum {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 10%;
+    background-color: var(--color2); 
+    border-bottom: 2px solid var(--border);
+    border-radius: 10px;
+}
+
+#buttons_forum:active {
+    border-top: 2px solid var(--border);
+    border-bottom: 0px solid var(--border);
+}
+
+#post {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+
+/* ===================================== SWITCH ===================================== */
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 24px;
+    margin-right: 5%;
+    margin-top: 20%;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #212529;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #ccc;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #212529;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
