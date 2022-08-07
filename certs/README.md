@@ -1,9 +1,3 @@
-# THESE ARE MY OWN KEYS FOR MY OWN MACHINE
-
-## GET UR FUCKING OWN
-
-### REMOVE ALL FILES APART FROM ***INFO2222.TEXT.EXT***
-
 Add the following lines if you on mac to get cert files.
 
 ------
