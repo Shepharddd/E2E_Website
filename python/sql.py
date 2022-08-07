@@ -88,9 +88,9 @@ class SQLDatabase():
         # prolly delete this comment at somepoint
         # pre-hashed admin password = "password" 
         print("adding admin")
-        self.add_user('admin', '852d317b48826418cd0e89a803fd0509da73aa7500efccca3e1e52e72fdc189a', '0', 'eat_ass_smoke_grass', admin=1)
-        self.add_user('muted', '852d317b48826418cd0e89a803fd0509da73aa7500efccca3e1e52e72fdc189a', '0', 'eat_ass_smoke_grass', muted=1)
-        self.add_user('muted1', '852d317b48826418cd0e89a803fd0509da73aa7500efccca3e1e52e72fdc189a', '0', 'eat_ass_smoke_grass', muted=1)
+        self.add_user('admin', '852d317b48826418cd0e89a803fd0509da73aa7500efccca3e1e52e72fdc189a', '0', 'testing', admin=1)
+        self.add_user('muted', '852d317b48826418cd0e89a803fd0509da73aa7500efccca3e1e52e72fdc189a', '0', 'testing', muted=1)
+        self.add_user('muted1', '852d317b48826418cd0e89a803fd0509da73aa7500efccca3e1e52e72fdc189a', '0', 'testing', muted=1)
 
         print("adding topic1")
         self.add_topic('topic1', 'admin', 'fisrt')
